@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class signUpForm extends StatefulWidget {
   const signUpForm({Key? key}) : super(key: key);
@@ -49,7 +50,7 @@ class _signUpFormState extends State<signUpForm> {
                           decoration: InputDecoration(
                             border: InputBorder.none,
                             prefixIcon: Icon(
-                              Icons.vpn_key,
+                              FontAwesomeIcons.lock,
                               size: 30,
                             ),
                             labelText: "סיסמא",
@@ -58,21 +59,6 @@ class _signUpFormState extends State<signUpForm> {
                           )),
                     ),
                   ),
-                  Column(
-                    children: [
-                      ListWheelScrollView(
-                        useMagnifier: true,
-                        magnification: 1.2,
-                        diameterRatio: 3,
-                        itemExtent: 50,
-                        onSelectedItemChanged: (index) {},
-                        physics: FixedExtentScrollPhysics(),
-                        children: [
-                          getWeekDay("Sunday"),
-                        ],
-                      ),
-                    ],
-                  )
                 ],
               ),
             ),
