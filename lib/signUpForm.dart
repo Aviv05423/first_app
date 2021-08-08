@@ -69,12 +69,6 @@ class _signUpFormState extends State<signUpForm> {
                         physics: FixedExtentScrollPhysics(),
                         children: [
                           getWeekDay("Sunday"),
-                          getWeekDay("Monday"),
-                          getWeekDay("Tuesday"),
-                          getWeekDay("Wednesday"),
-                          getWeekDay("Thursday"),
-                          getWeekDay("Friday"),
-                          getWeekDay("Sateday")
                         ],
                       ),
                     ],
@@ -86,3 +80,5 @@ class _signUpFormState extends State<signUpForm> {
         ));
   }
 }
+
+//
