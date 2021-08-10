@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.green,
       ),
       // themeMode: ThemeMode.dark,
+
       home: signUpForm(),
     );
   }
